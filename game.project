@@ -10,6 +10,8 @@ height = 640
 
 [project]
 title = lua-compat-5.3
+publisher = Aleksandr Derbenev
+developer = Lua.org, PUC-Rio, The Lua-Compat-5.3 authors.
 
 [library]
 include_dirs = compat53

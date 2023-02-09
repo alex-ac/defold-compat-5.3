@@ -29,7 +29,7 @@ It includes:
 ### Lua module
 
 ```lua
-require("compat53")
+require("compat53.init")
 ```
 
 `compat53` makes changes to your global environment and does not return
