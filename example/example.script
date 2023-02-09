@@ -1,0 +1,33 @@
+require "compat53.init"
+
+function init(self)
+	-- pack/unpack are functions from lua 5.3 which could not be accessed on 5.1.
+	local bytes = string.pack('>I4', 0xdeadbeef)
+	local value, _ = string.unpack('>I4', bytes)
+	print('Value: ', value)
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end

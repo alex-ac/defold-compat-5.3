@@ -10,12 +10,6 @@
 #include "lprefix.h"
 
 
-#include "lua.h"
-
-#include "lauxlib.h"
-#include "lualib.h"
-
-
 #if defined(LUA_COMPAT_BITLIB)		/* { */
 
 

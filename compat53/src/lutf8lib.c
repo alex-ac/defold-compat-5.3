@@ -15,11 +15,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "lua.h"
-
-#include "lauxlib.h"
-#include "lualib.h"
-
 #define MAXUNICODE	0x10FFFF
 
 #define iscont(p)	((*(p) & 0xC0) == 0x80)

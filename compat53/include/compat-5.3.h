@@ -4,16 +4,11 @@
 #include <stddef.h>
 #include <limits.h>
 #include <string.h>
-#if defined(__cplusplus) && !defined(COMPAT53_LUA_CPP)
-extern "C" {
-#endif
-#include <lua.h>
-#include <lauxlib.h>
-#include <lualib.h>
-#if defined(__cplusplus) && !defined(COMPAT53_LUA_CPP)
-}
-#endif
+#include <dmsdk/sdk.h>
 
+#ifndef lua_assert
+#define lua_assert(x) ((void)0)
+#endif
 
 #undef COMPAT53_INCLUDE_SOURCE
 #if defined(COMPAT53_PREFIX)

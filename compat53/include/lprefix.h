@@ -43,7 +43,7 @@
 
 
 /* COMPAT53 adaptation */
-#include "c-api/compat-5.3.h"
+#include "compat-5.3.h"
 
 #undef LUAMOD_API
 #define LUAMOD_API extern
@@ -87,8 +87,6 @@ static const char *compat53_utf8_escape (lua_State* L, long x) {
 
 
 #ifdef lstrlib_c
-#include <locale.h>
-#include <lualib.h>
 /* move the string library open function out of the way (we only take
  * the string packing functions)!
  */

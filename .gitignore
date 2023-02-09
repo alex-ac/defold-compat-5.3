@@ -8,3 +8,6 @@ HISTO
 # vim temporaries
 .*.swp
 
+build/
+/.internal
+/build

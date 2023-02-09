@@ -19,12 +19,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "lua.h"
-
-#include "lauxlib.h"
-#include "lualib.h"
-
-
 /*
 ** maximum number of captures that a pattern can do during
 ** pattern-matching. This limit is arbitrary, but must fit in

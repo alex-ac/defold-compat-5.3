@@ -14,12 +14,6 @@
 #include <stddef.h>
 #include <string.h>
 
-#include "lua.h"
-
-#include "lauxlib.h"
-#include "lualib.h"
-
-
 /*
 ** Operations that an object must define to mimic a table
 ** (some functions only need some of them)
@@ -160,7 +154,7 @@ static int tmove (lua_State *L) {
 static void addfield (lua_State *L, luaL_Buffer *b, lua_Integer i) {
   lua_geti(L, 1, i);
   if (!lua_isstring(L, -1))
-    luaL_error(L, "invalid value (%s) at index %d in table for 'concat'",
+    luaL_error(L, "invalid value (%s) at index %ld in table for 'concat'",
                   luaL_typename(L, -1), i);
   luaL_addvalue(b);
 }
